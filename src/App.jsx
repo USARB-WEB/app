@@ -8,35 +8,25 @@ function App() {
     setLanguage(lang);
   }
 
+  const translations = {
+    'EN': {
+      'title': 'This is a React APP',
+      'description': 'This is a simple React app that is created using create-react-app.'
+    },
+    'RO': {
+      'title': 'Aceasta este o aplicatie React',
+      'description': 'Aceasta este o aplicatie simpla React care este creata folosind create-react-app.'
+    } 
+  };
+
 
   return (
     <div className="App">
       <h1>
-        {
-          language === 'EN' && <>
-            This is a React APP
-          </>
-        }
-
-        {
-          language === 'RO' && <>
-            Aceasta este o aplicatie React
-          </>
-        }
-
+        { translations[language]['title'] }
       </h1>
       <p>
-        {
-          language === 'EN' && <>
-            This is a simple React app that is created using create-react-app.
-          </>
-        }
-
-        {
-          language === 'RO' && <>
-            Aceasta este o aplicatie simpla React care este creata folosind create-react-app.
-          </>
-        }
+        { translations[language]['description'] }
       </p>
       <p>
         <button
