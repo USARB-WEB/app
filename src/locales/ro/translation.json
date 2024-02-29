@@ -1,0 +1,7 @@
+{
+    "title": "Aceasta este o aplicatie React",
+    "description": "Aceasta este o aplicatie simpla React care este creata folosind create-react-app.",
+    "home_page": {
+        "title": "Bine ati venit la aplicatia React"
+    }
+}

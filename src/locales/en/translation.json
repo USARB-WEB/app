@@ -1,0 +1,7 @@
+{
+    "title": "This is a React APP",
+    "description": "This is a simple React app that is created using create-react-app.",
+    "home_page": {
+        "title": "Welcome to React"
+    }
+}
