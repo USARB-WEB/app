@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import translations from './translations';
 
 function App() {
   const [language, setLanguage] = useState('RO');
@@ -7,18 +8,6 @@ function App() {
   const changeLanguage = (lang) => {
     setLanguage(lang);
   }
-
-  const translations = {
-    'EN': {
-      'title': 'This is a React APP',
-      'description': 'This is a simple React app that is created using create-react-app.'
-    },
-    'RO': {
-      'title': 'Aceasta este o aplicatie React',
-      'description': 'Aceasta este o aplicatie simpla React care este creata folosind create-react-app.'
-    } 
-  };
-
 
   return (
     <div className="App">
@@ -39,6 +28,13 @@ function App() {
           disabled={language === 'RO'}
           onClick={() => changeLanguage('RO')}
         >RO</button>
+        <button
+          className={language === 'DE' ? 'selected-language' : ''}
+          disabled={language === 'DE'}
+          onClick={() => changeLanguage('DE')}
+        >
+          DE
+        </button>
       </p>
     </div>
   );
